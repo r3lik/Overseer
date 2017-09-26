@@ -34,7 +34,8 @@ define service {
     check_command            check_lag! ae62 10000
 }
 ```
-This is what it will look like:
+Voilà :]
+
 ![Nagios lag_check](https://user-images.githubusercontent.com/3232601/30882288-59d8f1d8-a2bd-11e7-9c5f-a89439f290fe.JPG)
 
 ## Kernel version check
