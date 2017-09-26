@@ -1,14 +1,14 @@
 # Overseer
-A collection of monitoring scripts for Nagios
+###A collection of monitoring scripts for Nagios
 
 1. Lag speed check
-  - confirms that your ports are running at correct speed
-  - runs on the Nagios server using `SNMP` 
+   - confirms that your ports are running at correct speed
+   - runs on the Nagios server using `SNMP` 
 2. Kernel version check
-  - confirms that you are running the kernel that you expect
-  - runs on the host target using `NRPE`
+   - confirms that you are running the kernel that you expect
+   - runs on the host target using `NRPE`
 3. Anycast IP check
-  - confirms that your IPs are being announced from multiple locations
+   - confirms that your IPs are being announced from multiple locations
 
 ## Lag speed check
 Add the following to your Nagios `commands.cfg` file:
