@@ -7,8 +7,9 @@
 2. Kernel version check
    - confirms that you are running the kernel that you expect
    - runs on the host target using `NRPE`
-3. Anycast IP check
-   - confirms that your IPs are being announced from multiple locations
+3. PDNS records check
+   - scans for empty records in Power DNS log files 
+   - runs on the host target using `NRPE`
 
 ## Lag speed check
 Add the following to your Nagios `commands.cfg` file:
@@ -50,3 +51,13 @@ define command{
 ```
 
 Add the script to NRPE on the host server(s)
+
+## PDNS records check
+Add the following to your Nagios `commands.cfg` file:
+
+```
+define command{
+	command_name	check_pdns
+	command_line	$USER1$/check_nrpe -H $HOSTADDRESS$ -c check_pdns
+	}
+```
