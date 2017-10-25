@@ -1,5 +1,5 @@
 # Overseer
-### A collection of monitoring scripts for [(https://www.nagios.org/ Nagios)]
+### A collection of monitoring scripts for [Nagios](https://www.nagios.org/)
 
 1. Lag speed check
    - confirms that your ports are running at correct speed
